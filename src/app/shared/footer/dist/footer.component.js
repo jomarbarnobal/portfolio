@@ -7,14 +7,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 exports.__esModule = true;
 var core_1 = require("@angular/core");
-var Home = /** @class */ (function () {
-    function Home() {
+var FooterComponnent = /** @class */ (function () {
+    function FooterComponnent() {
     }
-    Home = __decorate([
+    FooterComponnent = __decorate([
         core_1.Component({
-            templateUrl: './home.component.html'
+            selector: 'my-footer',
+            templateUrl: './footer.component.html'
         })
-    ], Home);
-    return Home;
+    ], FooterComponnent);
+    return FooterComponnent;
 }());
-exports.Home = Home;
+exports.FooterComponnent = FooterComponnent;

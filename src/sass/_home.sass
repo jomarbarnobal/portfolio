@@ -1,0 +1,27 @@
+@import './mixins'
+
+.parallax-container
+    position: relative
+    min-height: 450px
+    overflow: hidden
+    height: auto
+
+    .parallax
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        z-index: -1
+
+        img
+            width: 100%
+            height: auto
+            background-position: center
+            background-size: cover
+
+.home-grid-container 
+    margin-top: 15px
+        
+    .home-grid
+        @include grid(4, 1.5%)

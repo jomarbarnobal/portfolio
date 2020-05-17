@@ -7,14 +7,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 exports.__esModule = true;
 var core_1 = require("@angular/core");
-var Home = /** @class */ (function () {
-    function Home() {
+var Navigation = /** @class */ (function () {
+    function Navigation() {
     }
-    Home = __decorate([
+    Navigation = __decorate([
         core_1.Component({
-            templateUrl: './home.component.html'
+            selector: 'header-nav',
+            templateUrl: './navigations.component.html'
         })
-    ], Home);
-    return Home;
+    ], Navigation);
+    return Navigation;
 }());
-exports.Home = Home;
+exports.Navigation = Navigation;
