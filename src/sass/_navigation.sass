@@ -1,5 +1,5 @@
 $border-bottom-color: #d8d7d7
-
+$nav-background-color: #000
 nav
     background: transparent
     width: 100%
@@ -59,7 +59,7 @@ nav
                     color: white
                     
 .nav-change-color
-    background-color: teal    
+    background-color: transparentize($nav-background-color, .5)
     transition: background-color 1s linear
     -moz-transition: background-color 1s linear
     -webkit-transition: background-color 1s linear
