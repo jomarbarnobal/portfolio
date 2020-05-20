@@ -1,4 +1,4 @@
-<div class="parallax-container">
+<!-- <div class="parallax-container">
   <div class="parallax" appParallax [ratio]="0.5">
       <img src="assets/images/EA_background.jpeg" alt="">
   </div>
@@ -6,64 +6,19 @@
 
 <div class="container">
   <section class="home-grid-container">
-      <div class="home-grid">
+      <div class="home-grid" *ngFor="let project of projects" >
         <div class="card">
           <img src="assets/images/112.png" alt="">
         <div class="card-section">
-          <a href="">test section</a>
+          <a href="{{ project.id}}">{{ project.title}}</a>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus aspernatur, aliquam, cupiditate quia inventore, explicabo dolorum autem sequi nemo minima beatae architecto facilis enim iusto! Soluta sequi provident nam.
+            {{ project.body }}
           </p>
         </div>
-          
         </div>
       </div>
-      <div class="home-grid">
-        <div class="card">
-          <img src="assets/images/112.png" alt="">
-          <div class="card-section">
-            <h1>test section</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus aspernatur, aliquam, cupiditate quia inventore, explicabo dolorum autem sequi nemo minima beatae architecto facilis enim iusto! Soluta sequi provident nam.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="home-grid">
-        <div class="card">
-          <img src="assets/images/112.png" alt="">
-          <div class="card-section">
-            <h1>test section</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus aspernatur, aliquam, cupiditate quia inventore, explicabo dolorum autem sequi nemo minima beatae architecto facilis enim iusto! Soluta sequi provident nam.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="home-grid">
-        <div class="card">
-          <img src="assets/images/112.png" alt="">
-          <div class="card-section">
-            <h1>test section</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus aspernatur, aliquam, cupiditate quia inventore, explicabo dolorum autem sequi nemo minima beatae architecto facilis enim iusto! Soluta sequi provident nam.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="home-grid">
-        <div class="card">
-          <img src="assets/images/112.png" alt="">
-          <div class="card-section">
-            <h1>test section</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus aspernatur, aliquam, cupiditate quia inventore, explicabo dolorum autem sequi nemo minima beatae architecto facilis enim iusto! Soluta sequi provident nam.
-            </p>
-          </div>
-        </div>
-      </div>
-  </section>
-</div>
+   </section>
+</div> -->
 
   
   

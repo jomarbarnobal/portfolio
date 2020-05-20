@@ -4,8 +4,10 @@ import { Home } from './pages'
 
 
 const routes: Routes = [
-  { path: "home", pathMatch: 'full', component: Home},
-  { path: "", redirectTo: '/home', pathMatch: 'full'}
+  { path: "", redirectTo: '/home', pathMatch: 'full'},
+  { path: "home", component: Home}
+  // { path: "projects/:id", component: ProjectDetails }
+  
 ];
 
 @NgModule({

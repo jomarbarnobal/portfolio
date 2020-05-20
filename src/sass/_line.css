@@ -1,12 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
-@fontface {
+@font-face {
   font-family: "simple-line-icons";
-  src: url("/assets/fonts/Simple-Line-Icons.eot?v=2.4.0");
-  src: url("/assets/fonts/Simple-Line-Icons.eot?v=2.4.0#iefix") format("embedded-opentype");
-  src: url("/assets/fonts/Simple-Line-Icons.woff2?v=2.4.0") format("woff2");
-  src: url("/assets/fonts/Simple-Line-Icons.ttf?v=2.4.0") format("truetype");
-  src: url("/assets/fonts/Simple-Line-Icons.woff?v=2.4.0") format("woff");
-  src: url("/assets/fonts/Simple-Line-Icons.svg?v=2.4.0#simple-line-icons") format("svg");
+  src: url("/assets/fonts//Simple-Line-Icons.eot?v=2.4.0");
+  src: url("/assets/fonts//Simple-Line-Icons.eot?v=2.4.0#iefix") format("embedded-opentype"), url("/assets/fonts//Simple-Line-Icons.woff2?v=2.4.0") format("woff2"), url("/assets/fonts//Simple-Line-Icons.ttf?v=2.4.0") format("truetype"), url("/assets/fonts//Simple-Line-Icons.woff?v=2.4.0") format("woff"), url("/assets/fonts//Simple-Line-Icons.svg?v=2.4.0#simple-line-icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -474,6 +469,9 @@
 
 .icon-pie-chart:before {
   content: "\e05e";
+}
+
+.icon-pencil:before {
   content: "\e05f";
 }
 
@@ -579,6 +577,10 @@
 
 .icon-ban:before {
   content: "\e07c";
+}
+
+.icon-bubble:before {
+  content: "\e07d";
 }
 
 .icon-camrecorder:before {
@@ -771,193 +773,4 @@
 
 .icon-social-steam:before {
   content: "\e620";
-}
-
-body,
-html {
-  font-size: 1em;
-  font-family: 'Roboto', sans-serif;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.main-header {
-  position: fixed;
-  width: 100%;
-  z-index: 2;
-}
-
-a {
-  display: block;
-  text-decoration: none;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-main::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-my-footer {
-  background: #f3f3f3;
-  display: block;
-  width: 100%;
-  height: 450px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-.parallax-container {
-  position: relative;
-  min-height: 450px;
-  overflow: hidden;
-  height: auto;
-}
-
-.parallax-container .parallax {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
-.parallax-container .parallax img {
-  width: 100%;
-  height: auto;
-  background-position: center;
-  background-size: cover;
-}
-
-.home-grid-container {
-  margin-top: 15px;
-}
-
-.home-grid-container .home-grid {
-  float: left;
-  margin-right: 1.5%;
-  margin-bottom: 1.5%;
-  width: 23.875%;
-}
-
-.home-grid-container .home-grid:nth-child(4n) {
-  margin-right: 0;
-}
-
-.sidenav {
-  height: 100%;
-  width: 60px;
-  position: fixed;
-  z-index: 3;
-  top: 0;
-  background: #222b2f;
-  min-height: 500px;
-}
-
-.nav-logo {
-  display: block;
-  padding: 18px;
-  background: #fff;
-}
-
-.sidebar-bar-nav {
-  display: block;
-  text-align: center;
-  position: absolute;
-  height: 210px;
-  top: 50%;
-  margin-top: -120px;
-  width: 100%;
-}
-
-.sidebar-bar-nav a {
-  display: block;
-  line-height: 4;
-  color: #ddd;
-}
-
-.sidebar-bar-nav:active {
-  color: #01f9e2;
-}
-
-.sidebar-bar-nav a:hover .icon {
-  opacity: 0;
-}
-
-.sidebar-bar-nav a:hover:after {
-  opacity: 1;
-}
-
-.sidebar-bar-nav a:nth-child(1):after {
-  content: 'HOME';
-  top: 2px;
-  position: absolute;
-  color: #08fdd8;
-}
-
-.sidebar-bar-nav a:nth-child(2):after {
-  content: 'ABOUT';
-  top: 66px;
-  position: absolute;
-  color: #08fdd8;
-}
-
-.sidebar-bar-nav a:nth-child(3):after {
-  content: 'SKILLS';
-  bottom: 50px;
-  position: absolute;
-  color: #08fdd8;
-}
-
-.sidebar-bar-nav a:nth-child(4):after {
-  content: 'PROJECT';
-  bottom: -13px;
-  position: absolute;
-  color: #08fdd8;
-}
-
-.sidebar-bar-nav a:after {
-  content: '';
-  font-size: 9px;
-  letter-spacing: 2px;
-  position: relative;
-  display: block;
-  width: 100%;
-  text-align: center;
-  opacity: 0;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-.card {
-  border: 1px solid #eee;
-  height: 290px;
-  overflow: hidden;
-}
-
-.card img {
-  width: 100%;
-  overflow: hidden;
-}
-
-.card .card-section {
-  padding: 10px;
 }

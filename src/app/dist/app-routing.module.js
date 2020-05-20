@@ -7,15 +7,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 exports.__esModule = true;
 var core_1 = require("@angular/core");
-var Navigation = /** @class */ (function () {
-    function Navigation() {
+var router_1 = require("@angular/router");
+var pages_1 = require("./pages");
+var routes = [
+    { path: "", redirectTo: '/home', pathMatch: 'full' },
+    { path: "home", component: pages_1.Home }
+    // { path: "projects/:id", component: ProjectDetails }
+];
+var AppRoutingModule = /** @class */ (function () {
+    function AppRoutingModule() {
     }
-    Navigation = __decorate([
-        core_1.Component({
-            selector: 'side-bar',
-            templateUrl: './navigations.component.html'
+    AppRoutingModule = __decorate([
+        core_1.NgModule({
+            imports: [router_1.RouterModule.forRoot(routes)],
+            exports: [router_1.RouterModule]
         })
-    ], Navigation);
-    return Navigation;
+    ], AppRoutingModule);
+    return AppRoutingModule;
 }());
-exports.Navigation = Navigation;
+exports.AppRoutingModule = AppRoutingModule;

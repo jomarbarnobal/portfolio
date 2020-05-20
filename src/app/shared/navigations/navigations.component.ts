@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'header-nav',
+    selector: 'side-bar',
     templateUrl: './navigations.component.html',
 })
 

@@ -1,8 +1,11 @@
+// Module
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+// Services
+import { ProjectService } from './services/project.service'
 // Shared Component
 import { Navigation } from './shared/navigations/navigations.component';
 import { FooterComponnent } from './shared/footer/footer.component'
@@ -26,9 +29,10 @@ import { NavScrollDirective } from './nav-scroll.directive'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ ProjectService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

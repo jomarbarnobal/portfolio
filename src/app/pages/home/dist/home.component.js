@@ -8,8 +8,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 exports.__esModule = true;
 var core_1 = require("@angular/core");
 var Home = /** @class */ (function () {
-    function Home() {
+    function Home(_projectService) {
+        this._projectService = _projectService;
+        this.projects = [];
     }
+    Home.prototype.ngOnInit = function () {
+        var _this = this;
+        this._projectService.getProjects()
+            .subscribe(function (data) {
+            console.log(data);
+            _this.projects = data;
+        });
+    };
     Home = __decorate([
         core_1.Component({
             templateUrl: './home.component.html'

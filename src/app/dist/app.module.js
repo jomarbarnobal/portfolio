@@ -6,10 +6,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 exports.__esModule = true;
+// Module
 var platform_browser_1 = require("@angular/platform-browser");
 var core_1 = require("@angular/core");
+var http_1 = require("@angular/common/http");
 var app_routing_module_1 = require("./app-routing.module");
 var app_component_1 = require("./app.component");
+// Services
+var project_service_1 = require("./services/project.service");
 // Shared Component
 var navigations_component_1 = require("./shared/navigations/navigations.component");
 var footer_component_1 = require("./shared/footer/footer.component");
@@ -33,9 +37,10 @@ var AppModule = /** @class */ (function () {
             ],
             imports: [
                 platform_browser_1.BrowserModule,
-                app_routing_module_1.AppRoutingModule
+                app_routing_module_1.AppRoutingModule,
+                http_1.HttpClientModule
             ],
-            providers: [],
+            providers: [project_service_1.ProjectService],
             bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);

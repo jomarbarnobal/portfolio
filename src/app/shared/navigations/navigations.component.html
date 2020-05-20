@@ -1,4 +1,4 @@
-<nav class="nav navbar" appNavScroll>
+<!-- <nav class="nav navbar" appNavScroll>
     <menu>
       <div class="nav-logo">
         <img src="assets/images/logo_eabc.png" alt="">
@@ -10,4 +10,17 @@
         <li><a href="#" routerLink="/about">About</a></li>
       </ul>
     </menu>
-</nav>
+</nav> -->
+
+ 
+<div class="nav-logo">
+  <a routerLink="/home" class="logo-link"><i class="icon icon-diamond"></i></a>  
+</div>
+
+<div class="sidebar-bar-nav">
+  <a routerLink="/home" [routerLinkActive]="['active']"><i class="icon small icon-home"></i></a>
+  <a routerLink="/about" [routerLinkActive]="['active']"><i class="icon small icon-user"></i></a>
+  <a routerLink="/skills" [routerLinkActive]="['active']"><i class="icon small icon-direction"></i></a>
+  <a routerLink="/projects" [routerLinkActive]="['active']"> <i class="icon small icon-wrench"></i></a>
+</div>
+  
