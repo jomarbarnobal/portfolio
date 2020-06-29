@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "ng-jomar"
+  "defaultProject": "ng-jomar",
+  "cli": {
+    "analytics": "382d33aa-b984-47b0-bd8c-93adfd864859"
+  }
 }

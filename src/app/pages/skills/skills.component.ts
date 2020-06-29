@@ -1,0 +1,7 @@
+import { Component } from '@angular/core'
+
+@Component({
+  templateUrl: './skills.component.html'
+})
+
+export class Skills {}

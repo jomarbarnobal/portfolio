@@ -11,7 +11,9 @@ import { Navigation } from './shared/navigations/navigations.component';
 import { FooterComponnent } from './shared/footer/footer.component'
 
 // Pages
-import { Home } from './pages';
+import { 
+        Home,
+       } from './pages';
 
 // Custom Directives
 import { ParallaxDirective } from './parallax.directive';
