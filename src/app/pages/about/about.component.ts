@@ -4,4 +4,6 @@ import { Component} from '@angular/core'
   templateUrl: './about.component.html'
 }) 
 
-export class About {}
+export class About {
+  name = 'Jomar Barnobal'
+}

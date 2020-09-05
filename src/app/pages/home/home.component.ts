@@ -8,7 +8,7 @@ import { runInThisContext } from 'vm';
 
 export class Home implements OnInit{
 
- name = 'Jomar'
+ name = 'Jomar Barnobal'
 
  ngOnInit(){}
 }
