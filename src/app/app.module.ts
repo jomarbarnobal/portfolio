@@ -12,7 +12,7 @@ import { FooterComponnent } from './shared/footer/footer.component'
 
 // Pages
 import { 
-        Home,
+        Home, Projects
        } from './pages';
 
 // Custom Directives
@@ -25,6 +25,7 @@ import { NavScrollDirective } from './nav-scroll.directive'
     AppComponent,
     Navigation,
     Home,
+    Projects,
     ParallaxDirective,
     NavScrollDirective,
     FooterComponnent

@@ -7,15 +7,8 @@ import { runInThisContext } from 'vm';
 })
 
 export class Home implements OnInit{
-    projects = []
 
-    constructor(private _projectService: ProjectService){}
+ name = 'Jomar'
 
-    ngOnInit() {
-        this._projectService.getProjects()
-            .subscribe((data: any[]) => {
-            console.log(data);
-            this.projects = data;
-        })
-    }
+ ngOnInit(){}
 }

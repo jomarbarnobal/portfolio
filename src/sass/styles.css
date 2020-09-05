@@ -1,12 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-@fontface {
+@font-face {
   font-family: "simple-line-icons";
   src: url("/assets/fonts/Simple-Line-Icons.eot?v=2.4.0");
-  src: url("/assets/fonts/Simple-Line-Icons.eot?v=2.4.0#iefix") format("embedded-opentype");
-  src: url("/assets/fonts/Simple-Line-Icons.woff2?v=2.4.0") format("woff2");
-  src: url("/assets/fonts/Simple-Line-Icons.ttf?v=2.4.0") format("truetype");
-  src: url("/assets/fonts/Simple-Line-Icons.woff?v=2.4.0") format("woff");
-  src: url("/assets/fonts/Simple-Line-Icons.svg?v=2.4.0#simple-line-icons") format("svg");
+  src: url("/assets/fonts/Simple-Line-Icons.eot?v=2.4.0#iefix") format("embedded-opentype"), url("/assets/fonts/Simple-Line-Icons.woff2?v=2.4.0") format("woff2"), url("/assets/fonts/Simple-Line-Icons.ttf?v=2.4.0") format("truetype"), url("/assets/fonts/Simple-Line-Icons.woff?v=2.4.0") format("woff"), url("/assets/fonts/Simple-Line-Icons.svg?v=2.4.0#simple-line-icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -474,6 +470,9 @@
 
 .icon-pie-chart:before {
   content: "\e05e";
+}
+
+.icon-pencil:before {
   content: "\e05f";
 }
 
@@ -579,6 +578,10 @@
 
 .icon-ban:before {
   content: "\e07c";
+}
+
+.icon-bubble:before {
+  content: "\e07d";
 }
 
 .icon-camrecorder:before {
@@ -800,6 +803,10 @@ a {
   margin: 0 auto;
 }
 
+main {
+  padding-left: 60px;
+}
+
 main::after {
   content: '';
   display: block;
@@ -824,42 +831,15 @@ h6 {
   padding: 0;
 }
 
-.parallax-container {
-  position: relative;
-  min-height: 450px;
-  overflow: hidden;
-  height: auto;
-}
-
-.parallax-container .parallax {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
-.parallax-container .parallax img {
-  width: 100%;
-  height: auto;
-  background-position: center;
-  background-size: cover;
-}
-
-.home-grid-container {
-  margin-top: 15px;
-}
-
-.home-grid-container .home-grid {
+.home-content {
+  margin: 0px;
+  padding: 0px;
   float: left;
-  margin-right: 1.5%;
-  margin-bottom: 1.5%;
-  width: 23.875%;
-}
-
-.home-grid-container .home-grid:nth-child(4n) {
-  margin-right: 0;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  left: 50%;
 }
 
 .sidenav {
@@ -960,4 +940,58 @@ h6 {
 
 .card .card-section {
   padding: 10px;
+}
+
+.app-loading .logo {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.app-loading .spinner {
+  height: 200px;
+  width: 200px;
+  animation: rotate 2s linear infinite;
+  transform-origin: center center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.app-loading .spinner .path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  animation: dash 1.5s ease-in-out infinite;
+  stroke-linecap: round;
+  stroke: #ddd;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
 }
