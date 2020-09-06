@@ -1,7 +1,10 @@
 <header>
   <side-bar class="sidenav"></side-bar> 
 </header>
+
 <main [@routeAnimations]="animateRoute(outlet)">
-  <router-outlet #outlet="outlet"></router-outlet>
+  <div class="section-wrapper">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
 </main>
 

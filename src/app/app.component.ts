@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { slideAnimation} from './_animation/route.animation';
+import { fader } from './_animation/route.animation';
 
 
 @Component({
@@ -8,7 +8,7 @@ import { slideAnimation} from './_animation/route.animation';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.sass'],
   animations: [
-    slideAnimation
+    fader
   ]
 
 })

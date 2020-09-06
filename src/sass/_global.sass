@@ -15,20 +15,24 @@ body
   font-weight: 300
 
 .main-header 
-  position: fixed
   width: 100%
   z-index: 2
 a
   display: block
   text-decoration: none
 
-.container
-  width: 80%
+
+.container 
   margin: 0 auto
+  width: 90%
+
+
+.section-wrapper
+    position: relative
 
 main
+  height: 100%
   padding-left: 60px
-  position: relative
   &::after
       content: ''
       display: block
@@ -50,11 +54,6 @@ h6
   margin: 0
   padding: 0
 
-.container 
-  margin: 0 auto
-  max-width: 1280px
-  width: 90%
-
 .header-wrapper 
   display: block
 
@@ -64,14 +63,6 @@ h6
   footer 
     padding-left: 0
 
-
-@media only screen and (min-width: 993px)
-  .container 
-    width: 70%
-
-@media only screen and (min-width: 601px)
-  .container 
-    width: 85%
 
 
 
