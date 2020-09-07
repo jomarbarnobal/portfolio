@@ -1,3 +1,7 @@
+@import './breakpoint'
+header 
+    position: relative
+
 .sidenav 
     height: 100%
     width: 60px
@@ -7,34 +11,47 @@
     background: #222b2f
     min-height: 500px
     border-right: 1px solid #cdcfd0
+    overflow: hidden
+
+    +respond-to(small)
+        width: 100%
+        min-height: 0
+        height: 60px
+    
+    .sidebar-bar-nav 
+        display: block
+        text-align: center
+        position: absolute
+        top: 50%
+        margin-top: -120px
+        width: 100%
+
+        +respond-to(small)
+            margin-top: 0
+            position: static
+
+        a 
+            display: block
+            line-height: 4
+            color: #ddd
+
+            +respond-to(small)
+                display: inline-block
+                width: 70px
+                line-height: 2.7
+
+            &:hover
+                .icon
+                    opacity: 0
+
+            &:active
+                color: rgb(1, 249, 226)
+
 
 .nav-logo 
     display: block
     padding: 18px
     background: #fff
-
-
-.sidebar-bar-nav 
-    display: block
-    text-align: center
-    position: absolute
-    height: 210px
-    top: 50%
-    margin-top: -120px
-    width: 100%
-    a 
-        display: block
-        line-height: 4
-        color: #ddd
-  
-    &:active
-        color: rgb(1, 249, 226)
-  
-
-.sidebar-bar-nav a:hover 
-    .icon
-        opacity: 0
-
 
 .sidebar-bar-nav 
     a:hover:after
@@ -44,38 +61,54 @@
 .sidebar-bar-nav 
     a:nth-child(1)
         position: relative
+
     a:nth-child(1):after 
         content: 'HOME'
         top: 24px
         position: absolute
         color: #08fdd8
 
+        +respond-to(small)
+            top: 16px
+
 .sidebar-bar-nav 
     a:nth-child(2)
         position: relative
+
     a:nth-child(2):after 
         content: 'ABOUT'
         top: 24px
         position: absolute
         color: #08fdd8
+        
+        +respond-to(small)
+            top: 16px
     
 .sidebar-bar-nav 
     a:nth-child(3)
         position: relative
+
     a:nth-child(3):after
         content: 'SKILLS'
         bottom: 30px
         position: absolute
         color: #08fdd8
 
+        +respond-to(small)
+            top: 20px
+
 .sidebar-bar-nav
     a:nth-child(4)
         position: relative 
+
     a:nth-child(4):after
         content: 'PROJECT'
         bottom: 30px
         position: absolute
         color: #08fdd8
+
+        +respond-to(small)
+            top: 20px
 
 
 .sidebar-bar-nav 

@@ -1,3 +1,4 @@
+@import './breakpoint'
 body,
 html
   font-size: 1em
@@ -27,7 +28,8 @@ a.active
 .container 
   margin: 0 auto
   width: 90%
-
+  +respond-to(small) 
+    width: 100%
 
 .section-wrapper
     position: relative
@@ -36,6 +38,9 @@ a.active
 main
   height: 100%
   padding-left: 60px
+  
+  +respond-to(small)
+    padding-left: 0
   
   &::after
       content: ''
@@ -70,11 +75,7 @@ h6
   overflow: hidden
   background-color: #e0e0e0
 
-@media only screen and (max-width : 992px) 
-  header, 
-  main, 
-  footer 
-    padding-left: 0
+
 
 
 
