@@ -1,0 +1,12 @@
+$breakpoints: ("small": 767px, "meadium": 992px, "large": 1200px, 'phone': 400)
+
+=respond-to($breakpoint)
+    @if map-has-key($breakpoints, $breakpoint)
+        @media (max-width: map-get($breakpoints, $breakpoint)) 
+            @content
+         
+    @else
+        @warn "unfortunately, no value could retrieve from `#{$breakpoint}`." + "Available breakpoints are: #{map-key(breakpoints)}."
+
+            
+    
