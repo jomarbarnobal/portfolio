@@ -1,14 +1,29 @@
-.header-wrapper
-    .about-header 
-        padding-top: 40px
-        font-size: 4.2rem
-        font-weight: 400
-    .name
-        margin:0
-        strong
-            color: #000
-            font-weight: 400   
-    .grey-text
-        font-size: 0.8rem
-        color: #9e9e9e
-        margin: 0
+@import './grid'
+
+// .header-wrapper
+//     .about-header 
+//         padding-top: 40px
+//         font-size: 4.2rem
+//         font-weight: 400
+//     .name
+//         margin:0
+//         strong
+//             color: #000
+//             font-weight: 400   
+//     .grey-text
+//         font-size: 0.8rem
+//         color: #9e9e9e
+//         margin: 0
+
+// .about-content 
+//     background-color: #eeefe5
+//     height: 100%
+
+
+.about-header
+    background-color: #eeefe5
+
+.about-content 
+    .grid
+        .column
+            +grid(3, 2%)    

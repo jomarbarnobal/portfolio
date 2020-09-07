@@ -8,7 +8,7 @@ html
 body
   margin: 0
   padding: 0
-  background: #fff
+  background: #f5f5f5
   color: #444
   font-size: 1.4rem
   -webkit-font-smoothing: antialiased
@@ -36,16 +36,16 @@ a.active
     height: 100%
 
 main
-  height: 100%
   padding-left: 60px
-  
-  +respond-to(small)
-    padding-left: 0
-  
-  &::after
+  &:after
       content: ''
       display: block
       clear: both
+
+  +respond-to(small)
+    padding-left: 0
+  
+  
 
 my-footer
   background: #f3f3f3
