@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { Dashboard } from './admin/dashboard/dashboard.component';
 import { Home, Projects, About, Skills } from './pages'
 
 
@@ -8,7 +9,8 @@ const routes: Routes = [
   { path: "home", component: Home, data: { animation: 'isRight'} },
   { path: "projects", component: Projects, data: { animation: 'isLeft'} },
   { path: 'skills', component: Skills, data: { animation:'isRight'} },
-  { path: 'about', component: About, data: { animation: 'isLeft'} }
+  { path: 'about', component: About, data: { animation: 'isLeft'} },
+  { path: 'dashboard', component: Dashboard, data: { animation: 'isLeft'} }
 ];
 
 @NgModule({
